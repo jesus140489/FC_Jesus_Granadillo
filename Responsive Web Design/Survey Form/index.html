@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">251 Shop Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve our service
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>In which channel did you make your purchase?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select the channel</option>
+            <option value="mercado-libre">Mercado Libre</option>
+            <option value="claroshop">ClaroShop</option>
+            <option value="shopee">Shopee</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend our store to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of 251 Shop?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="free-shipping">Free Shipping</option>
+            <option value="variety-of-products">Variety of products</option>
+            <option value="payment-methods">Payment Methods</option>
+            <option value="customer-support">Customer Support</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="product-photos"
+              type="checkbox"
+              class="input-checkbox"
+            />Product Photos</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="product-descriptions"
+              type="checkbox"
+              class="input-checkbox"
+            />Product Descriptions</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="shipping-methods"
+              type="checkbox"
+              class="input-checkbox"
+            />Shipping Methods</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="payment-methods"
+              type="checkbox"
+              class="input-checkbox"
+            />Payment Methods</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="customer-support"
+              type="checkbox"
+              class="input-checkbox"
+            />Customer Support</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="variety-of-products"
+              type="checkbox"
+              class="input-checkbox"
+            />Variety of Products</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
