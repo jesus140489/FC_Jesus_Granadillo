@@ -1,0 +1,21 @@
+button
+{
+  background-color: white;
+  border-color: white;
+  border-style: solid;
+}
+
+td 
+{
+  text-align: center;
+}
+
+label 
+{
+  margin: 10px;
+}
+
+.container
+{
+  margin: 20px;
+}
